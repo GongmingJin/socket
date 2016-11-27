@@ -4,6 +4,7 @@ import (
 	"net"
 	"os"
 	"../protocol"
+	"bufio"
 )
 
 func main() {
@@ -18,6 +19,7 @@ func main() {
 		}
 		Log(conn.RemoteAddr().String(), " tcp connect success")
 		go handleConnection(conn)
+		AcceptExternalStruct(conn);
 	}
 }
 
@@ -57,4 +59,30 @@ func CheckError(err error) {
 		fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
 		os.Exit(1)
 	}
+}
+/**
+接受外部指令
+ */
+func AcceptExternalStruct (conn net.Conn)  {
+	go func() {
+		running := true
+		reader := bufio.NewReader(os.Stdin)
+		for running {
+			data, _, _ := reader.ReadLine()
+			command := string(data)
+			if command == "status"{
+				conn.Write(protocol.Enpack([]byte(command)))
+			}
+			if command == "open"{
+				conn.Write(protocol.Enpack([]byte(command)))
+			}
+			if command == "close"{
+				conn.Write(protocol.Enpack([]byte(command)))
+			}
+			if command == "stop" {
+				running = false
+			}
+			fmt.Println("command", command)
+		}
+	}()
 }
