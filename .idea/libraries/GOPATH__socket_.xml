@@ -1,0 +1,98 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;socket&gt;">
+    <CLASSES>
+      <root url="file://E:/goproject/sdk/go/src/internal" />
+      <root url="file://E:/goproject/sdk/go/src/bufio" />
+      <root url="file://E:/goproject/sdk/go/src/flag" />
+      <root url="file://E:/goproject/sdk/go/src/expvar" />
+      <root url="file://E:/goproject/sdk/go/src/hash" />
+      <root url="file://E:/goproject/sdk/go/src/errors" />
+      <root url="file://E:/goproject/sdk/go/src/syscall" />
+      <root url="file://E:/goproject/sdk/go/src/regexp" />
+      <root url="file://E:/goproject/sdk/go/src/math" />
+      <root url="file://E:/goproject/sdk/go/src/cmd" />
+      <root url="file://E:/goproject/sdk/go/src/strconv" />
+      <root url="file://E:/goproject/sdk/go/src/unicode" />
+      <root url="file://E:/goproject/sdk/go/src/crypto" />
+      <root url="file://E:/goproject/sdk/go/src/encoding" />
+      <root url="file://E:/goproject/sdk/go/src/sort" />
+      <root url="file://E:/goproject/sdk/go/src/sync" />
+      <root url="file://E:/goproject/sdk/go/src/testing" />
+      <root url="file://E:/goproject/sdk/go/src/io" />
+      <root url="file://E:/goproject/sdk/go/src/archive" />
+      <root url="file://E:/goproject/sdk/go/src/index" />
+      <root url="file://E:/goproject/sdk/go/src/image" />
+      <root url="file://E:/goproject/sdk/go/src/compress" />
+      <root url="file://E:/goproject/sdk/go/src/html" />
+      <root url="file://E:/goproject/sdk/go/src/context" />
+      <root url="file://E:/goproject/sdk/go/src/net" />
+      <root url="file://E:/goproject/sdk/go/src/text" />
+      <root url="file://E:/goproject/sdk/go/src/fmt" />
+      <root url="file://E:/goproject/sdk/go/src/reflect" />
+      <root url="file://E:/goproject/sdk/go/src/path" />
+      <root url="file://E:/goproject/sdk/go/src/container" />
+      <root url="file://E:/goproject/sdk/go/src/time" />
+      <root url="file://E:/goproject/sdk/go/src/mime" />
+      <root url="file://E:/goproject/sdk/go/src/bytes" />
+      <root url="file://E:/goproject/sdk/go/src/builtin" />
+      <root url="file://E:/goproject/sdk/go/src/os" />
+      <root url="file://E:/goproject/sdk/go/src/go" />
+      <root url="file://E:/goproject/sdk/go/src/runtime" />
+      <root url="file://E:/goproject/sdk/go/src/debug" />
+      <root url="file://E:/goproject/sdk/go/src/vendor" />
+      <root url="file://E:/goproject/sdk/go/src/strings" />
+      <root url="file://E:/goproject/sdk/go/src/unsafe" />
+      <root url="file://E:/goproject/sdk/go/src/log" />
+      <root url="file://E:/goproject/sdk/go/src/database" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://E:/goproject/sdk/go/src/internal" />
+      <root url="file://E:/goproject/sdk/go/src/bufio" />
+      <root url="file://E:/goproject/sdk/go/src/flag" />
+      <root url="file://E:/goproject/sdk/go/src/expvar" />
+      <root url="file://E:/goproject/sdk/go/src/hash" />
+      <root url="file://E:/goproject/sdk/go/src/errors" />
+      <root url="file://E:/goproject/sdk/go/src/syscall" />
+      <root url="file://E:/goproject/sdk/go/src/regexp" />
+      <root url="file://E:/goproject/sdk/go/src/math" />
+      <root url="file://E:/goproject/sdk/go/src/cmd" />
+      <root url="file://E:/goproject/sdk/go/src/strconv" />
+      <root url="file://E:/goproject/sdk/go/src/unicode" />
+      <root url="file://E:/goproject/sdk/go/src/crypto" />
+      <root url="file://E:/goproject/sdk/go/src/encoding" />
+      <root url="file://E:/goproject/sdk/go/src/sort" />
+      <root url="file://E:/goproject/sdk/go/src/sync" />
+      <root url="file://E:/goproject/sdk/go/src/testing" />
+      <root url="file://E:/goproject/sdk/go/src/io" />
+      <root url="file://E:/goproject/sdk/go/src/archive" />
+      <root url="file://E:/goproject/sdk/go/src/index" />
+      <root url="file://E:/goproject/sdk/go/src/image" />
+      <root url="file://E:/goproject/sdk/go/src/compress" />
+      <root url="file://E:/goproject/sdk/go/src/html" />
+      <root url="file://E:/goproject/sdk/go/src/context" />
+      <root url="file://E:/goproject/sdk/go/src/net" />
+      <root url="file://E:/goproject/sdk/go/src/text" />
+      <root url="file://E:/goproject/sdk/go/src/fmt" />
+      <root url="file://E:/goproject/sdk/go/src/reflect" />
+      <root url="file://E:/goproject/sdk/go/src/path" />
+      <root url="file://E:/goproject/sdk/go/src/container" />
+      <root url="file://E:/goproject/sdk/go/src/time" />
+      <root url="file://E:/goproject/sdk/go/src/mime" />
+      <root url="file://E:/goproject/sdk/go/src/bytes" />
+      <root url="file://E:/goproject/sdk/go/src/builtin" />
+      <root url="file://E:/goproject/sdk/go/src/os" />
+      <root url="file://E:/goproject/sdk/go/src/go" />
+      <root url="file://E:/goproject/sdk/go/src/runtime" />
+      <root url="file://E:/goproject/sdk/go/src/debug" />
+      <root url="file://E:/goproject/sdk/go/src/vendor" />
+      <root url="file://E:/goproject/sdk/go/src/strings" />
+      <root url="file://E:/goproject/sdk/go/src/unsafe" />
+      <root url="file://E:/goproject/sdk/go/src/log" />
+      <root url="file://E:/goproject/sdk/go/src/database" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
