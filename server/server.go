@@ -16,8 +16,6 @@ func main() {
 		if err != nil {
 			continue
 		}
-		//timeouSec :=10
-		//conn.
 		Log(conn.RemoteAddr().String(), " tcp connect success")
 		go handleConnection(conn)
 	}

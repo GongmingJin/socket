@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"../protocol"
 	"bytes"
+	"bufio"
 )
 
 func send(conn net.Conn) {
@@ -16,7 +17,19 @@ func send(conn net.Conn) {
 	//	words := "{\"ID\":"+ strconv.Itoa(i) +"\",\"Session\":"+session +"2015073109532345\",\"Meta\":\"golang\",\"Content\":\"message\"}"
 	//	conn.Write(protocol.Enpack([]byte(words)))
 	//}
-	conn.Write(protocol.Enpack([]byte(GetHostName() +";"+"注册")))
+	running := true
+	reader := bufio.NewReader(os.Stdin)
+	for running {
+		data, _, _ := reader.ReadLine()
+		command := string(data)
+		if command == "stop" {
+			running = false
+		}
+		conn.Write(protocol.Enpack([]byte("command:" +command)))
+		fmt.Println("command", command)
+	}
+
+
 	fmt.Println("send over")
 	//defer conn.Close()
 }
@@ -35,7 +48,7 @@ func GetHostName()string{
 	if err != nil {
 		fmt.Printf("%s", err)
 	} else {
-		fmt.Printf("%s", host)
+		fmt.Println(host)
 	}
 	return  host;
 }
@@ -82,24 +95,12 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
 		os.Exit(1)
 	}
-
 	conn, err := net.DialTCP("tcp", nil, tcpAddr)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
 		os.Exit(1)
 	}
 	fmt.Println("connect success")
+	conn.Write(protocol.Enpack([]byte(GetHostName() +";"+"注册")))
 	send(conn)
-	//defer func(){ // 必须要先声明defer，否则不能捕获到panic异常
-	//	fmt.Println("send fail")
-	//	if err:=recover();err!=nil{
-	//		fmt.Println(err) // 这里的err其实就是panic传入的内容
-	//		conn.Close();
-	//		os.Exit(1);
-	//	}
-	//	fmt.Println("d")
-	//
-	//}()
-	checkHeartBeat(conn)
-
 }
